@@ -4,11 +4,12 @@ const List = () => {
 
 
 
-    // Add const and useState to input a function for to-do-list
+    // Create a const and useState to input a function for to-do-list
+    // const [name, function]
     const [inputText, setInputText] = useState("");
     const [items, setItems] = useState([]);
   
-    // Add a const named handleChange and event function
+    // Create a const named handleChange and event function
     // Inside add a const named newValue
     // setInputText
     const handleChange = (event) => {
@@ -35,20 +36,23 @@ const List = () => {
         </div>
 
         <div className="form">
+            {/* inputText */}
+            {/* handleChange - function */}
             <input 
                 onChange={handleChange} 
                 type="text" 
                 value={inputText} />
+                
+            {/* Call a Function = addItem */}
             <button onClick={addItem}>
                 <span>Add</span>
             </button>
 
         </div>
         <div>
+            {/* items */}
             <ul>
-                {items.map(todoItem => (
-                <li>{todoItem}</li>
-                ))}
+                {items.map(todoItem => (<li>{todoItem}</li>))}
             </ul>
         </div>
   </div>
