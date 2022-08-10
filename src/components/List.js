@@ -17,6 +17,7 @@ const List = () => {
     
     // Add a const named addItem and setItems function for the button
     // setItems and inputText
+    // JavaScript Operator
     const addItem = () => {
         setItems(prevItems => {
         return [...prevItems, inputText];
