@@ -1,24 +1,46 @@
+import React, { useState } from 'react';
+
 const List = () => {
+
+
+
+    // React Forms
+    const [inputText, setInputText] = useState("");
+    const [items, setItems] = useState([]);
+  
+    function handleChange(event) {
+      const newValue = event.target.value;
+      setInputText(newValue);
+    }
+  
+    function addItem() {
+      setItems(prevItems => {
+        return [...prevItems, inputText];
+      });
+      setInputText("");
+    }
+
+
   return (
     <div className="container">
         <div className="heading">
-            <h1>To-Do List</h1>
+        <h1>To-Do List</h1>
         </div>
-
         <div className="form">
-            <input type="text" />
-            <button>
+        <input onChange={handleChange} type="text" value={inputText} />
+        <button onClick={addItem}>
             <span>Add</span>
-            </button>
+        </button>
         </div>
-
         <div>
-            <ul>
-            <li>A Item</li>
-            </ul>
+        <ul>
+            {items.map(todoItem => (
+            <li>{todoItem}</li>
+            ))}
+        </ul>
         </div>
-    </div>
-  )
+  </div>
+  );
 }
 
 export default List
