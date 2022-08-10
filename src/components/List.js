@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 
 const List = () => {
 
-
-
     // Create a const and useState to input a function for to-do-list
     // const [name, function]
     const [inputText, setInputText] = useState("");
@@ -17,7 +15,7 @@ const List = () => {
         setInputText(newValue);  
     }
     
-    // Add a const named addItem and setItems function
+    // Add a const named addItem and setItems function for the button
     // setItems and inputText
     const addItem = () => {
         setItems(prevItems => {
