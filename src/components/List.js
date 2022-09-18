@@ -8,8 +8,7 @@ const List = () => {
    
     const [items, setItems] = useState([]);
   
-   
-    
+
     // Add a const named addItem and setItems function for the button
     // setItems and inputText
     // JavaScript Operator
@@ -27,8 +26,6 @@ const List = () => {
             });
        });
     }
-
-
 
 
   return (
