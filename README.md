@@ -8,7 +8,7 @@
 } -->
 
 <div align="center">
-  <a href="https://get-time-state-by-johncanero.vercel.app/" target="_blank">
+  <a href="https://to-do-list-ten-by-johncanero.vercel.app/" target="_blank">
     <img alt="number-state" height="100" src="./src/images/listEmoji.png"/>
   </a>
 </div>
@@ -19,13 +19,13 @@
 
 This is the To Do List React Project on Udemy - Web Development Bootcamp 2022
 
-It is made with React JS utilizing the State Hook and Props in React. List that! 
+It is made with React JS utilizing the State Hook and Props in React. List that!
 📝
 </div>
 
 ## Website
 
-🖥️ [https://get-time-state-by-johncanero.vercel.app/]
+🖥️ [https://to-do-list-ten-by-johncanero.vercel.app/]
 
 ✍️ Project by John Cañero
 
